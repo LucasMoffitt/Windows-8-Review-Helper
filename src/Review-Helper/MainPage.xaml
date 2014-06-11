@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Review_Helper.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Review_Helper"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock x:Name="CurrentVersionLabel" Text="Not Available" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            <TextBlock x:Name="FakePageLoadCountLabel" Text="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            <Button Click="FakePageLoad_Click" HorizontalAlignment="Center" VerticalAlignment="Center">Fake Page Load!</Button>
+            <Button Click="Reset_Click" Margin="0,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">Reset Settings</Button>
+
+
+        </StackPanel>
+    </Grid>
+</Page>
